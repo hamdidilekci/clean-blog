@@ -1,0 +1,25 @@
+{
+  "name": "clean-blog-project",
+  "version": "1.0.0",
+  "description": "clean-blog-project first homework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamdidilekci/clean-blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "hamdi dilekci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamdidilekci/clean-blog/issues"
+  },
+  "homepage": "https://github.com/hamdidilekci/clean-blog#readme",
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
+}
