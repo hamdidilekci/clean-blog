@@ -12,8 +12,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>POSTS</h1>
-              <span class="subheading">All Posts.</span>
+              <h1>POST</h1>
+              <span class="subheading">Post detail.</span>
             </div>
           </div>
         </div>
@@ -25,24 +25,21 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 
-          <% for (let i =0; i < allPosts.length; i++) { %>
-
             <div class="post-preview">
-              <a href="/posts/<%= allPosts[i]._id %>">
+              <a href="/post/<%= onePost._id %>">
                 <h2 class="post-title">
-                  <%= allPosts[i].title %>
+                  <%= onePost.title %>
                 </h2>
                 <h3 class="post-subtitle">
-                  <%= allPosts[i].description %>
+                  <%= onePost.description %>
                 </h3>
               </a>
               <p class="post-meta">
-                <%= allPosts[i].dateCreated %>
+                <%= onePost.dateCreated %>
                 </p>
             </div>
-
-            <% } %>
-            
+            <a href="/posts/edit/<%= onePost._id %>" type="submit" class="btn btn-primary" id="sendMessageButton">Update</a>
+          <button type="submit" class="btn btn-danger" id="sendMessageButton">Delete</button>
         </div>
       </div>
     </div>
